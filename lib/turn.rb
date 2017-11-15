@@ -34,7 +34,9 @@ end
 def turn(board)
   puts "Please enter 1-9:"
   position = gets.strip
+  puts `position is #{position}`
   index = input_to_index(position)
+  puts `Index is #{index}`
   # is_valid = valid_move?(board, position)
   # while !valid_move?(board, position) do
   #   turn(board)
