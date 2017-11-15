@@ -36,7 +36,7 @@ def turn(board)
   position = gets.strip
   index = input_to_index(position)
   is_valid = valid_move?(board, index)
-  while valid_move?(board, index) == false do
+  if valid_move?(board, index) == false do
     turn(board)
   end
   #
