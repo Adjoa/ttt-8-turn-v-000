@@ -40,7 +40,8 @@ def turn(board)
     turn(board)
   else
     move(board, index)
-    
+  end
+
   # while valid_move?(board, index) == false do
   #   turn(board)
   # end
